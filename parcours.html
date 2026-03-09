@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Mon Parcours</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="top">
+        <p>Mon Parcours Scolaire & Expériences</p>
+    </div>
+
+    <h2 style="text-align:center; margin-top:30px;">Mon Cursus Scolaire</h2>
+    <div class="photo-section">
+        <div class="photo-container" onclick="voirNom('École Primaire de la Sainte Famille - Plouhinec')">
+            <img src="primaire.jpg" alt="Primaire">
+            <div class="titre">Primaire<br><span class="date-cursus">2010 - 2018</span></div>
+        </div>
+        <div class="photo-container" onclick="voirNom('Collège Saint-Pierre - Port-Louis')">
+            <img src="college.jpg" alt="Collège">
+            <div class="titre">Collège<br><span class="date-cursus">2018 - 2022</span></div>
+        </div>
+        <div class="photo-container" onclick="voirNom('Lycée Saint Joseph-La Salle - Lorient')">
+            <img src="lycee.jpeg" alt="Lycée">
+            <div class="titre">Lycée<br><span class="date-cursus">2022 - 2025</span></div>
+        </div>
+        <div class="photo-container" onclick="voirNom('Université Bretagne Sud - Lorient')">
+            <img src="ubs.png" alt="UBS">
+            <div class="titre">UBS<br><span class="date-cursus">2025 - 2027</span></div>
+        </div>
+        <div class="photo-container" onclick="voirNom('ENSIBS - École d\'ingénieurs - Lorient')">
+            <img src="ensibs.jpg" alt="ENSIBS">
+            <div class="titre">ENSIBS<br><span class="date-cursus">2027 - 2030</span></div>
+        </div>
+    </div>
+    
+    <div id="affichage-nom" style="text-align:center; width:50%; margin: 10px auto; display:none;"></div>
+
+    <div class="container_informations">
+        <h2>Expérience Professionnelle : Stage de Géomètre</h2>
+        <hr>
+        <p><strong>Lieu :</strong> Cabinet NICOLAS ASSOCIES - Auray (Morbihan)</p>
+        <p>J'ai effectué mon stage au sein d'un cabinet de géomètres-experts. J'ai pu découvrir les levés topographiques et le travail de bureau sur logiciel spécialisé.</p>
+        
+        <p>🌐 Site web du cabinet : <a href="https://www.nicolas-associes.com/" target="_blank" style="color: #001f3f; font-weight: bold;">Consulter le site officiel</a></p>
+
+        <div style="margin-top: 20px; text-align: center;">
+            <h3>Visualiser mon travail de terrain :</h3>
+            <button class="button-style" onclick="changerPhotoStage('prisme.jpg', 'Le Prisme utilisé pour les visées')">Le Prisme</button>
+            <button class="button-style" onclick="changerPhotoStage('appareil.jpg', 'Appareil de mesure topographique')">Appareil de mesure</button>
+            <button class="button-style" onclick="changerPhotoStage('bureau.jpg', 'Mon espace de travail au bureau')">Mon Bureau</button>
+        </div>
+
+        <div id="zone-photo-stage" style="text-align: center; margin-top: 20px; display: none;">
+            <img id="image-stage-display" src="" alt="Photo de stage" style="max-width: 400px; border: 5px solid #001f3f; border-radius: 10px;">
+            <p id="legende-photo-stage" style="font-style: italic;"></p>
+        </div>
+    </div>
+
+    <footer class="site_footer">
+        <nav class="footer-nav">
+            <a href="index.html">Accueil</a>
+            <a href="parcours.html">Mon Parcours</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
